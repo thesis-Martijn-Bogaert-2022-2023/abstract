@@ -63,7 +63,7 @@ Dankzij haar modulariteit en aanpasbaarheid, kunnen de bovengenoemde en andere c
 
 \section{CoGent data en link traversal}
 
-\subsection{CoGent databronnen}
+\subsection{CoGent-bronnen}
 CoGent biedt voor elke deelnemende culturele instelling een aparte LDES aan. Dit kan handig zijn om bij aanvang van het querying proces een onderscheid te maken tussen verschillende collecties. In theorie is het ook zo dat de volgorde waarin de URI's van deze LDES'en als datasources aan een Comunica link traversal engine meegeven worden, bepaalt welke collectie eerst bevraagd wordt en uiteindelijk de eerste resultaten terug zal geven. In de praktijk ligt dat echter anders. Wanneer een link traversal engine verschillende HTTP requests uitvoert, is het immers niet op voorhand vast te leggen in welke volgorde de overeenkomstige HTTP responses de engine weer zullen bereiken. Of nog: hoe verder de engine in haar \textit{link traversal proces} gevordered is, hoe meer \textit{willekeur} vastgesteld kan worden.
 
 Dit maakt niet alleen dat de volgorde waarin LDES'en opgegeven worden, in principe weinig uitmaakt, maar ook dat de Mensgemaakte Objecten die in één bepaalde LDES voorkomen, niet per se in diezelfde volgorde teruggegeven zullen worden. Naast de vele voordelen, moet men er zich dus goed bewust van zijn dat LTQP ook duidelijk zijn nadelen heeft. Echter, aangezien de CoGhent-collecties in principe LDES'en zijn, zou er sowieso nooit van uit gegaan mogen worden dat dezelfde query op verschillende momenten dezelfde resultaten terug zou geven. LDES'en worden immers precies gekenmerkt door hun grote variabiliteit.
@@ -93,13 +93,17 @@ Wanneer een Comunica link traversal engine een Stad Gent resource probeert te be
 Ook de Getty Vocabularies server lijkt aan een gelijkaardige configuratiefout te lijden. Ook die geeft op basis van Comunica's \textit{Accept} header JSON content terug zonder context link header. Gelukkig kan voor de Getty Vocabularies resources een omweg genomen worden: wanneer expliciet de \textit{.json-ld}-extensie aan hun URIs toegevoegd wordt, reageert de server immers met een \textit{Content-Type} van \textit{application/ld+json}. Om een Comunica link traversal engine van deze capaciteit te voorzien, moet echter een custom actor aangemaakt worden die elke link uit een gegeven document overloopt en er zo nodig de extensie aan toevoegt. Dankzij deze tussenkomst is het mogelijk Getty Vocabularies resources in het link traversalproces te betrekken, maar het is duidelijk dat deze oplossing niet optimaal is.
 
 \section{Tools voor de constructie van queries}
-TODO
+Een belangrijk doel van de research is om gebruikers zonder technische achtergrond toch de mogelijkheid te geven de CoGent-collecties, in combinatie met alle data waarnaar ze verwijzen, te ontdekken. Zij moeten met andere woorden in staat gesteld worden de nodige queries - zij het eenvoudige - daarvoor op te stellen. In het licht daarvan introduceert de research dan ook twee gebruiksvriendelijke tools om in dit proces te helpen. Beide tools steunen echter op hetzelfde idee: op basis van gegeven input een query opstellen. Daarom maken beiden gebruik van een andere, meer \textit{low-level} applicatie.
 
 \subsection{Queryconstructie door middel van predicaatsequenties}
-TODO
+SPARQL queries kunnen zeer complexe vormen aannemen, maar in deze research wordt gefocust op het eerder eenvoudige soort queries dat voor een bepaald type resources - Mensgemaakte Objecten - één of meerdere kenmerkende \textit{properties} ophaalt door \textit{paden} aan predicaten - \textit{predicate sequences} - in de query te stipuleren. Deze specifieke manier van werken staat toe een eenvoudige applicatie te bouwen die een query kan genereren op basis van een op voorhand bepaalde reeks - kan er ook één zijn - \textit{properties} die dan weer elk een reeks predicaten specificeert. Daarnaast kan elke \textit{property} ook als \textit{optioneel} bestempeld en/of gefilterd worden.
 
 \subsection{Gebruikersgerichte applicaties}
-TODO
+Bijkomend worden twee andere applicaties geïntroduceerd. Hun voornaamste doel is het aanbieden van een gebruiksvriendelijke interface om queries op te bouwen, terwijl ze voor het effectieve query-generatieproces op de voorgaande tool kunnen rekenen.
+
+De eerste applicatie is voor de minst technische gebruikers bedoeld en is dan ook de meest eenvoudige: gebruikers krijgen een overzicht van vooraf bepaalde \textit{properties} te zien en kunnen hieruit een keuze maken. Daarnaast krijgen ze onder andere ook de mogelijkheid filters te specificeren. Dankzij een eenvoudige \textit{klik op de knop} krijgen ze ten slotte de overeenkomstige query te zien.
+
+De tweede applicatie is wat uitdagender in gebruik, maar beperkt gebruikers in hun keuze niet uitsluitend tot de \textit{properties} die door anderen \textit{voorgekauwd} zijn. Gebruikers worden geacht eigenhandig een resource op te geven, vanwaaruit ze een boom aan predicaten en andere resources kunnen doen vertakken. Dit geeft hen niet alleen een inkijk in het soort data waartoe het opgegeven type resource toegang verleent, maar biedt ook de mogelijkheid uit de bekomen boom resources als \textit{properties} te selecteren en er onder andere filters voor in te stellen. Opnieuw krijgen gebruikers dankzij een eenvoudige \textit{klik op de knop} ten slotte de overeenkomstige query te zien.
 
 \section{Queryresultaten verwerken}
 TODO
@@ -108,6 +112,9 @@ TODO
 TODO
 
 \subsection{Queryresultaten opslaan}
+TODO
+
+\section*{Conclusie}
 TODO
 
 \section*{Dankwoord}
