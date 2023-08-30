@@ -2599,20 +2599,20 @@
 
 
 % V1.7 provide string macros as article.cls does
-\def\contentsname{Contents}
-\def\listfigurename{List of Figures}
-\def\listtablename{List of Tables}
-\def\refname{References}
+\def\contentsname{Inhoud}
+\def\listfigurename{Lijst van Figuren}
+\def\listtablename{Lijst van Tabellen}
+\def\refname{Referenties}
 \def\indexname{Index}
 \def\figurename{Fig.}
 \def\tablename{TABLE}
-\@IEEEcompsocconfonly{\def\figurename{Figure}}
-\def\partname{Part}
-\def\appendixname{Appendix}
+\@IEEEcompsocconfonly{\def\figurename{Figuur}}
+\def\partname{Deel}
+\def\appendixname{Bijlage}
 \def\abstractname{Abstract}
 % IEEE specific names
-\def\IEEEkeywordsname{Index Terms}
-\def\IEEEproofname{Proof}
+\def\IEEEkeywordsname{Trefwoorden}
+\def\IEEEproofname{Bewijs}
 
 
 % LIST OF FIGURES AND TABLES AND TABLE OF CONTENTS
