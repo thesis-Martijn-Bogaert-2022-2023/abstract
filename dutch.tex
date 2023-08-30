@@ -50,7 +50,16 @@ Elk Human-Made Object in de collecties van CoGent bevat, naast zijn beschrijvend
 Naast de opslag van deze gegevens, zijn IIIF Manifests vooral bijzonder handig om culturele data te visualiseren. Er bestaan reeds meerdere IIIF Viewers die dit bewerkstelligen. Voor een gegeven manifest bieden deze viewers een gestandaardiseerde weergave van de data die erin aanwezig zijn. \cite{snydman2015international}
 
 \subsection{Link-Traversal-based Query Processing}
-TODO
+Dat de CoGhent-collecties deel uitmaken van het Linked Data web, maakt dat ze in principe veel meer knowledge kunnen voortbrengen dan wanneer de enkel de CoGhent-data op zich bevraagd wordt. Deze \textit{externe} data proberen te bereiken met één SPARQL query, kan echter enkel wanneer de uitvoerende query engine van resource naar resource kan \textit{springen}. Link Traversal-based Query Processing (LTQP) maakt dit praktisch mogelijk door dynamisch links tussen documenten te volgen. \cite{taelman2023ltqp}
+
+Echter, zonder beperkingen op te leggen aan de te volgen links, is LTQP onpraktisch. Daarom introduceerde O. Hartig \cite{hartig2012foundations} drie \textit{reachability criteria}: 
+\begin{itemize}
+    \item \textit{cAll} volgt alle links zonder beperking.
+    \item \textit{cNone} volgt geen enkele link.
+    \item \textit{cMatch} volgt alleen links die deel uitmaken van quads die overeenkomen met een quad pattern uit de query.
+\end{itemize}
+
+Dankzij haar modulariteit en aanpasbaarheid, kunnen de bovengenoemde en andere capaciteiten aan een Comunica engine gegeven worden, waardoor LTQP in de praktijk mogelijk wordt. \cite{taelman2018comunica} \cite{taelman2019lt}
 
 \section{CoGent data en link traversal}
 TODO
