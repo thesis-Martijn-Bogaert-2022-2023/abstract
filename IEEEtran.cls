@@ -2597,22 +2597,40 @@
 \def\@eqnnum{\theequationdis}
 
 
+\usepackage{babel}
+\babelprovide[main,import=en]{english}
+\babelprovide[import=nl]{dutch}
 
 % V1.7 provide string macros as article.cls does
-\def\contentsname{Inhoud}
-\def\listfigurename{Lijst van Figuren}
-\def\listtablename{Lijst van Tabellen}
-\def\refname{Referenties}
+\def\contentsname{Content}
+\def\listfigurename{List of Figures}
+\def\listtablename{List of Tables}
+\def\refname{References}
 \def\indexname{Index}
 \def\figurename{Fig.}
 \def\tablename{TABLE}
-\@IEEEcompsocconfonly{\def\figurename{Figuur}}
-\def\partname{Deel}
-\def\appendixname{Bijlage}
+\@IEEEcompsocconfonly{\def\figurename{Figure}}
+\def\partname{Part}
+\def\appendixname{Appendix}
 \def\abstractname{Abstract}
 % IEEE specific names
-\def\IEEEkeywordsname{Trefwoorden}
-\def\IEEEproofname{Bewijs}
+\def\IEEEkeywordsname{Keywords}
+\def\IEEEproofname{Proof}
+
+\addto\captionsdutch{\renewcommand{\contentsname}{Inhoud}}
+\addto\captionsdutch{\renewcommand{\listfigurename}{Lijst van Figuren}}
+\addto\captionsdutch{\renewcommand{\listtablename}{Lijst van Tabellen}}
+\addto\captionsdutch{\renewcommand{\refname}{Referenties}}
+\addto\captionsdutch{\renewcommand{\indexname}{Index}}
+\addto\captionsdutch{\renewcommand{\figurename}{Figuur}}
+\addto\captionsdutch{\renewcommand{\tablename}{TABEL}}
+\addto\captionsdutch{\@IEEEcompsocconfonly{\renewcommand{\figurename}{Figuur}}}
+\addto\captionsdutch{\renewcommand{\partname}{Deel}}
+\addto\captionsdutch{\renewcommand{\appendixname}{Bijlage}}
+\addto\captionsdutch{\renewcommand{\abstractname}{Samenvatting}}
+\addto\captionsdutch{\renewcommand{\IEEEkeywordsname}{Trefwoorden}}
+\addto\captionsdutch{\renewcommand{\IEEEproofname}{Bewijs}}
+
 
 
 % LIST OF FIGURES AND TABLES AND TABLE OF CONTENTS
