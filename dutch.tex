@@ -45,7 +45,9 @@ De gegevens van de deelnemende culturele instellingen, namelijk Design Museum Ge
 De LDESs van CoGent in het bijzonder, bevatten \textit{Mensgemaakte Object}en, of \textit{Human-Made Object}s in het Engels. Deze vertegenwoordigen zowel tastbare als ontastbare items die door mensen zijn gemaakt of beïnvloed, variërend van kunstwerken en boeken tot tradities en ambachten. Het \textit{Open Standaarden voor Linkende Organisaties}-initiatief (OSLO) speelt een cruciale rol in de standaardisatie deze Mensgemaakte Objecten. Mensgemaakte Objecten zijn ook volledig in lijn met internationale normen met het oog op semantische interoperabiliteit binnen het domein van cultureel erfgoed. \cite{van2022publishing} \cite{vanderperren2021oslo}
 
 \subsection{International Image Interoperability Framework}
-TODO
+Elk Human-Made Object in de collecties van CoGent bevat, naast zijn beschrijvende data, een link naar een IIIF Manifest. Deze manifests zijn gestructureerde RDF-bronnen die specifieke informatie over een object groeperen, variërend van details zoals dimensies en notities tot auteursrechtelijke informatie. Het International Image Interoperability Framework (IIIF) legt via haar Presentation en Image API's vast hoe deze manifests opgebouwd dienen te worden. In het geval van CoGent manifests, is die opbouw zeer eenvoudig: elk manifest bevat één sequence, die op haar beurt één canvas bevat, die op haar beurt dan weer één annotation met de afbeeldingslink en -metadata bevat. \cite{appleby2017presentation} \cite{emanuel2018stitching} \cite{floreverk2022coghent}
+
+Naast de opslag van deze gegevens, zijn IIIF Manifests vooral bijzonder handig om culturele data te visualiseren. Er bestaan reeds meerdere IIIF Viewers die dit bewerkstelligen. Voor een gegeven manifest bieden deze viewers een gestandaardiseerde weergave van de data die erin aanwezig zijn. \cite{snydman2015international}
 
 \subsection{Link-Traversal-based Query Processing}
 TODO
