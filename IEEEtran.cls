@@ -2627,7 +2627,7 @@
 \addto\captionsdutch{\@IEEEcompsocconfonly{\renewcommand{\figurename}{Figuur}}}
 \addto\captionsdutch{\renewcommand{\partname}{Deel}}
 \addto\captionsdutch{\renewcommand{\appendixname}{Bijlage}}
-\addto\captionsdutch{\renewcommand{\abstractname}{Samenvatting}}
+\addto\captionsdutch{\renewcommand{\abstractname}{Abstract}}
 \addto\captionsdutch{\renewcommand{\IEEEkeywordsname}{Trefwoorden}}
 \addto\captionsdutch{\renewcommand{\IEEEproofname}{Bewijs}}
 
