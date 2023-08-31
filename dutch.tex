@@ -78,7 +78,7 @@ Naast deze \textit{standaard} link extractors, biedt Comunica nog enkele bijkome
 Door het expliciet instellen van predicaten, steekt een nieuwe uitdaging de kop op: de links die voor een gegeven LDES-pagina naar de voorgaande en/of volgende pagina verwijzen, worden niet meer gevolgd, waardoor de engine per opgegeven LDES slechts één pagina kan beschouwen. De verschillende predicaten die naar deze links lopen, zouden in principe aan de predicatenlijst toegevoegd kunnen worden, ware het niet dat er reeds een link extractor bestaat die nadrukkelijk op zoek gaat naar \textit{TREE-specifieke} links. Aangezien de LDES-specificatie gebouwd is op de TREE-specificatie, is het dan ook aangewezen de huidige configuratie uit te breiden met deze \textit{Extract Links Tree Actor} en zo de volledige collecties bij het queryproces te betrekken. \cite{colpaert2023tree}
 
 \subsection{Te volgen links}
-Met de beschreven configuratie, zou de volgende stap het opstellen van queries moeten zijn. Alleen blijkt het semantische web in de praktijk minder \textit{querybaar} te zijn als verhoopt. Een groot probleem is namelijk dat bepaalde resources niet volledig volgens de richtlijnen worden gehost. Ook enkele van de types resources waarnaar CoGent Mensgemaakte Objecten refereren, lijden aan dergelijk euvel, waardoor het bijzonder moeilijk en soms zelfs onmogelijk wordt om hen te betrekken tijden het link traversalproces.
+Met de beschreven configuratie, zou de volgende stap het opstellen van queries moeten zijn. Alleen blijkt het semantische web in de praktijk minder \textit{querybaar} te zijn als verhoopt. Een groot probleem is namelijk dat bepaalde resources niet volledig volgens de RDF-richtlijnen worden gehost. Ook enkele van de types resources waarnaar CoGent Mensgemaakte Objecten refereren, lijden aan dergelijk euvel, waardoor het bijzonder moeilijk en soms zelfs onmogelijk wordt om hen te betrekken tijden het link traversalproces.
 
 \subsubsection{CoGent IIIF Manifests}
 Beginnen met het goede nieuws: de IIIF Manifests die de visuele component van Human-Made Objects beschrijven, zijn zonder meer bereikbaar en interpreteerbaar voor een link traversal engine. De digitale afbeelding van een Human-Made Object kan met andere woorden probleemloos opgehaald worden naast eventuele andere (tekstuele) data.
@@ -123,7 +123,9 @@ Wat een grotere uitdaging vormt, zijn servers die niet volgens de letter van de 
 Samenvattend biedt het onderzoek waardevolle inzichten en tools voor het ontdekken van digitale kunstcollecties en belicht het ook de inherente uitdagingen van het proces. Link traversal heeft onmiskenbare potentie om verborgen data te onthullen, maar er zijn ook uitdagingen zoals zijn onvoorspelbaarheid en doorgaans lange uitvoeringstijd. Daar kunnen tools die de constructie van queries toegankelijker maken, helaas weinig aan veranderen. Op voorwaarde dat link traversal door verder technologisch onderzoek betrouwbaarder en sneller wordt, kan het in de toekomst door het grote publiek aangewend worden. Momenteel vereist de technologie echter nog steeds een bepaalde mate van technische expertise.
 
 \section*{Dankwoord}
-TODO
+Ik wil graag enkele mensen bedanken. In de eerste plaats Bryan-Elliott Tam voor zijn vele hulp aangaande link traversal, alsook zijn vele bemoedigende woorden. Daarnaast wil ik ook Pieter Colpaert en Brecht Van de Vyvere bedanken om me zowel te introduceren als op weg te helpen in de wereld van Linked Data. Ook Olivier Van D'huynslager ben ik bijzonder dankbaar voor zijn vele inzichten in de CoGent-data.
+
+Verder wil ik ook uitdrukkelijk mijn familie bedanken. Dankjewel aan mijn ouders, broer en zus voor de vele steun. Ook dankjewel aan mijn grootouders voor het goede zorgen dag na dag. En uiteraard ben ik ook mijn vriendin ontzettend dankbaar om me op de moeilijke momenten opnieuw moed in te spreken en mijn onderzoek zo tot een goed einde te brengen.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
